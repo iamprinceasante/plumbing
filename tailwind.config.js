@@ -8,6 +8,9 @@ module.exports = {
                 secondary: '#06379a',
                 accent: '#ffb800',
             },
+            fontFamily: {
+                display: ["'Noto Sans Japanese'", 'sans-serif'],
+            },
         },
     },
     plugins: [],
