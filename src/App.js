@@ -81,7 +81,7 @@ function App() {
                 {/* Hero Section */}
                 <section className='hero'>
                     {/* Hero Section 1*/}
-                    <div className='hero1 max-h-[300px] h-full grid grid-cols-2 gap-9'>
+                    <div className='hero1 max-h-[350px] h-full grid grid-cols-2 gap-9'>
                         <div className='col-span-1 z-10 -ml-24'>
                             <img
                                 src={pic}
@@ -90,15 +90,16 @@ function App() {
                             />
                         </div>
                         <div className='col-span-1 pt-12 pb-6'>
-                            <h1 className='text-6xl font-bold mt-8'>
-                                We fix all your plumbing problems
+                            <h1 className='text-6xl font-bold mt-8 capitalize'>
+                                We fix all your plumbing{' '}
+                                <span className='text-primary'>problems </span>
                             </h1>
                         </div>
                     </div>
                     {/* Hero Section 1 Ends*/}
 
                     {/* Hero Section 2*/}
-                    <div className='hero2 bg-slate-300 bg-opacity-20 grid grid-cols-2 gap-9 -mx-24 px-24'>
+                    <div className='hero2 bg-slate-200 bg-opacity-20 grid grid-cols-2 gap-9 -mx-24 px-24'>
                         <div className='col-span-1 mt-32 py-20 grid grid-cols-2 gap-9'>
                             <div className='col-span-1'>
                                 <p className='text-primary font-bold text-6xl'>
@@ -292,6 +293,110 @@ function App() {
                                 vitae possimus.
                             </p>
                         </div>
+                    </div>
+                </section>
+
+                {/* Services Section Ends */}
+
+                {/* What We Offer */}
+
+                <section className='grid grid-cols-2 gap-9 -mx-24 px-24 bg-slate-100 py-20'>
+                    <div className='col-span-1'>
+                        <h2 className='text-2xl font-bold text-primary my-3'>
+                            What we offer
+                        </h2>
+                        <h3 className='text-4xl font-bold mt-2 mb-10'>
+                            We serve any work very quickly at a low price
+                        </h3>
+                        <div>
+                            <div className='flex items-center mb-3'>
+                                <div className='mr-2'>
+                                    <svg
+                                        xmlns='http://www.w3.org/2000/svg'
+                                        viewBox='0 0 24 24'
+                                        fill='currentColor'
+                                        className='w-6 h-6 text-primary'>
+                                        <path
+                                            fillRule='evenodd'
+                                            d='M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z'
+                                            clipRule='evenodd'
+                                        />
+                                    </svg>
+                                </div>
+                                <p className='text-xl'>Affordable Pricing</p>
+                            </div>
+                            <div className='flex items-center mb-3'>
+                                <div className='mr-2'>
+                                    <svg
+                                        xmlns='http://www.w3.org/2000/svg'
+                                        viewBox='0 0 24 24'
+                                        fill='currentColor'
+                                        className='w-6 h-6 text-primary'>
+                                        <path
+                                            fillRule='evenodd'
+                                            d='M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z'
+                                            clipRule='evenodd'
+                                        />
+                                    </svg>
+                                </div>
+                                <p className='text-xl'>Plumbing Experts</p>
+                            </div>
+                            <div className='flex items-center mb-3'>
+                                <div className='mr-2'>
+                                    <svg
+                                        xmlns='http://www.w3.org/2000/svg'
+                                        viewBox='0 0 24 24'
+                                        fill='currentColor'
+                                        className='w-6 h-6 text-primary'>
+                                        <path
+                                            fillRule='evenodd'
+                                            d='M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z'
+                                            clipRule='evenodd'
+                                        />
+                                    </svg>
+                                </div>
+                                <p className='text-xl'>1500+ Project Done</p>
+                            </div>
+                            <div className='flex items-center mb-3'>
+                                <div className='mr-2'>
+                                    <svg
+                                        xmlns='http://www.w3.org/2000/svg'
+                                        viewBox='0 0 24 24'
+                                        fill='currentColor'
+                                        className='w-6 h-6 text-primary'>
+                                        <path
+                                            fillRule='evenodd'
+                                            d='M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z'
+                                            clipRule='evenodd'
+                                        />
+                                    </svg>
+                                </div>
+                                <p className='text-xl'>Modern Technology</p>
+                            </div>
+                            <div className='flex items-center mb-3'>
+                                <div className='mr-2'>
+                                    <svg
+                                        xmlns='http://www.w3.org/2000/svg'
+                                        viewBox='0 0 24 24'
+                                        fill='currentColor'
+                                        className='w-6 h-6 text-primary'>
+                                        <path
+                                            fillRule='evenodd'
+                                            d='M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z'
+                                            clipRule='evenodd'
+                                        />
+                                    </svg>
+                                </div>
+                                <p className='text-xl'>24/7 Services</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='col-span-1'>
+                        <img
+                            src={pic}
+                            alt='Man fixing broken pipes'
+                            className='h-[380px] w-full'
+                        />
                     </div>
                 </section>
             </main>
