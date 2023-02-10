@@ -68,7 +68,7 @@ function App() {
                                 </li>
                             </ul>
                         </nav>
-                        <div className='flex justify-center items-center ml-6 px-4 py-2 rounded-full bg-primary text-white hover:text-primary hover:bg-white'>
+                        <div className='flex justify-center items-center ml-6 px-4 py-2 rounded-full bg-primary text-white hover:text-primary hover:bg-white border-primary border-2'>
                             <a href='./#'>Get Started</a>
                         </div>
                     </div>
@@ -465,7 +465,7 @@ function App() {
                                 </p>
                             </div>
                         </div>
-                        <div className='flex justify-center items-center my-4 px-6 py-2 bg-primary text-white rounded-full shadow w-fit'>
+                        <div className='flex justify-center items-center my-4 px-6 py-2 bg-primary text-white hover:text-primary hover:bg-white border-primary border-2 rounded-full shadow w-fit'>
                             <a href='./#'>Get Started</a>
                         </div>
                     </div>
