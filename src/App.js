@@ -407,7 +407,7 @@ function App() {
                         <img
                             src={pic}
                             alt='Why Choose Us'
-                            className='w-full h-[350px]'
+                            className='h-[350px] w-full rounded'
                         />
                     </div>
                     <div className='col-span-3'>
@@ -468,6 +468,36 @@ function App() {
                         <div className='flex justify-center items-center my-4 px-6 py-2 bg-primary text-white rounded-full shadow w-fit'>
                             <a href='./#'>Get Started</a>
                         </div>
+                    </div>
+                </section>
+
+                {/* Why Choose Us Ends*/}
+
+                {/* Contact Us Section */}
+
+                <section className='grid grid-cols-5 bg-primary pb-10 gap-16 rounded-md text-white'>
+                    <div className='col-span-3 pt-20 px-9'>
+                        <p className='text-3xl font-bold'>
+                            Can't find your desired service?
+                        </p>
+                        <p className='text-3xl font-bold my-2'>
+                            Let know in 24/7 in 3125
+                        </p>
+                        <div className='grid grid-cols-2 gap-6 text-xl'>
+                            <div className='flex justify-center items-center mt-4 px-6 py-2 bg-white text-primary hover:border-2 hover:border-white hover:text-white hover:bg-primary rounded-full shadow w-fit transition-all duration-500'>
+                                <a href='./#'>Request a service</a>
+                            </div>
+                            <div className='flex justify-center items-center mt-4 px-9 py-2 bg-primary text-white border-2 border-white hover:bg-white hover:text-primary rounded-full shadow w-fit transition-all duration-500'>
+                                <a href='./#'>3125</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='col-span-2 mr-6'>
+                        <img
+                            src={pic}
+                            alt='Call Us Now'
+                            className='h-[360px] w-full -mt-16 rounded'
+                        />
                     </div>
                 </section>
             </main>
