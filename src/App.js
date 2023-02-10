@@ -302,7 +302,7 @@ function App() {
 
                 <section className='grid grid-cols-2 gap-9 -mx-24 px-24 bg-slate-100 py-20'>
                     <div className='col-span-1'>
-                        <h2 className='text-2xl font-bold text-primary my-3'>
+                        <h2 className='text-2xl font-bold text-primary mb-3'>
                             What we offer
                         </h2>
                         <h3 className='text-4xl font-bold mt-2 mb-10'>
@@ -395,8 +395,79 @@ function App() {
                         <img
                             src={pic}
                             alt='Man fixing broken pipes'
-                            className='h-[380px] w-full'
+                            className='h-[380px] w-full rounded'
                         />
+                    </div>
+                </section>
+                {/* What We Offer Ends*/}
+
+                {/* Why Choose Us */}
+                <section className='grid grid-cols-5 gap-16 py-20'>
+                    <div className='col-span-2'>
+                        <img
+                            src={pic}
+                            alt='Why Choose Us'
+                            className='w-full h-[350px]'
+                        />
+                    </div>
+                    <div className='col-span-3'>
+                        <h2 className='text-2xl font-bold text-primary mb-3 capitalize'>
+                            Why choose us
+                        </h2>
+                        <h3 className='text-4xl font-bold mt-2 mb-12 capitalize'>
+                            The perfect solution for all plumbing service
+                        </h3>
+                        <div className='grid grid-cols-2 gap-20'>
+                            <div className='flex flex-col'>
+                                <h4 className='uppercase flex items-center mb-2'>
+                                    <svg
+                                        xmlns='http://www.w3.org/2000/svg'
+                                        viewBox='0 0 24 24'
+                                        fill='currentColor'
+                                        className='w-9 h-9 text-blue-500 mr-2 inline'>
+                                        <path
+                                            fillRule='evenodd'
+                                            d='M11.622 1.602a.75.75 0 01.756 0l2.25 1.313a.75.75 0 01-.756 1.295L12 3.118 10.128 4.21a.75.75 0 11-.756-1.295l2.25-1.313zM5.898 5.81a.75.75 0 01-.27 1.025l-1.14.665 1.14.665a.75.75 0 11-.756 1.295L3.75 8.806v.944a.75.75 0 01-1.5 0V7.5a.75.75 0 01.372-.648l2.25-1.312a.75.75 0 011.026.27zm12.204 0a.75.75 0 011.026-.27l2.25 1.312a.75.75 0 01.372.648v2.25a.75.75 0 01-1.5 0v-.944l-1.122.654a.75.75 0 11-.756-1.295l1.14-.665-1.14-.665a.75.75 0 01-.27-1.025zm-9 5.25a.75.75 0 011.026-.27L12 11.882l1.872-1.092a.75.75 0 11.756 1.295l-1.878 1.096V15a.75.75 0 01-1.5 0v-1.82l-1.878-1.095a.75.75 0 01-.27-1.025zM3 13.5a.75.75 0 01.75.75v1.82l1.878 1.095a.75.75 0 11-.756 1.295l-2.25-1.312a.75.75 0 01-.372-.648v-2.25A.75.75 0 013 13.5zm18 0a.75.75 0 01.75.75v2.25a.75.75 0 01-.372.648l-2.25 1.312a.75.75 0 11-.756-1.295l1.878-1.096V14.25a.75.75 0 01.75-.75zm-9 5.25a.75.75 0 01.75.75v.944l1.122-.654a.75.75 0 11.756 1.295l-2.25 1.313a.75.75 0 01-.756 0l-2.25-1.313a.75.75 0 11.756-1.295l1.122.654V19.5a.75.75 0 01.75-.75z'
+                                            clipRule='evenodd'
+                                        />
+                                    </svg>
+                                    <span className='text-2xl font-bold'>
+                                        Our mission
+                                    </span>
+                                </h4>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Exercitationem sint eum
+                                    ullam!
+                                </p>
+                            </div>
+                            <div className='flex flex-col'>
+                                <h4 className='uppercase flex items-center mb-2'>
+                                    <svg
+                                        xmlns='http://www.w3.org/2000/svg'
+                                        viewBox='0 0 24 24'
+                                        fill='currentColor'
+                                        className='w-9 h-9 text-blue-500 mr-2 inline'>
+                                        <path
+                                            fillRule='evenodd'
+                                            d='M11.622 1.602a.75.75 0 01.756 0l2.25 1.313a.75.75 0 01-.756 1.295L12 3.118 10.128 4.21a.75.75 0 11-.756-1.295l2.25-1.313zM5.898 5.81a.75.75 0 01-.27 1.025l-1.14.665 1.14.665a.75.75 0 11-.756 1.295L3.75 8.806v.944a.75.75 0 01-1.5 0V7.5a.75.75 0 01.372-.648l2.25-1.312a.75.75 0 011.026.27zm12.204 0a.75.75 0 011.026-.27l2.25 1.312a.75.75 0 01.372.648v2.25a.75.75 0 01-1.5 0v-.944l-1.122.654a.75.75 0 11-.756-1.295l1.14-.665-1.14-.665a.75.75 0 01-.27-1.025zm-9 5.25a.75.75 0 011.026-.27L12 11.882l1.872-1.092a.75.75 0 11.756 1.295l-1.878 1.096V15a.75.75 0 01-1.5 0v-1.82l-1.878-1.095a.75.75 0 01-.27-1.025zM3 13.5a.75.75 0 01.75.75v1.82l1.878 1.095a.75.75 0 11-.756 1.295l-2.25-1.312a.75.75 0 01-.372-.648v-2.25A.75.75 0 013 13.5zm18 0a.75.75 0 01.75.75v2.25a.75.75 0 01-.372.648l-2.25 1.312a.75.75 0 11-.756-1.295l1.878-1.096V14.25a.75.75 0 01.75-.75zm-9 5.25a.75.75 0 01.75.75v.944l1.122-.654a.75.75 0 11.756 1.295l-2.25 1.313a.75.75 0 01-.756 0l-2.25-1.313a.75.75 0 11.756-1.295l1.122.654V19.5a.75.75 0 01.75-.75z'
+                                            clipRule='evenodd'
+                                        />
+                                    </svg>
+                                    <span className='text-2xl font-bold'>
+                                        Our vision
+                                    </span>
+                                </h4>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Exercitationem sint eum
+                                    ullam!
+                                </p>
+                            </div>
+                        </div>
+                        <div className='flex justify-center items-center my-4 px-6 py-2 bg-primary text-white rounded-full shadow w-fit'>
+                            <a href='./#'>Get Started</a>
+                        </div>
                     </div>
                 </section>
             </main>
