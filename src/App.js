@@ -66,11 +66,11 @@ function App() {
                                         Contact
                                     </a>
                                 </li>
+                                <li className='flex justify-center items-center ml-2 px-4 py-2 rounded-full bg-primary text-white hover:text-primary hover:bg-white border-primary border-2'>
+                                    <a href='./#'>Get Started</a>
+                                </li>
                             </ul>
                         </nav>
-                        <div className='flex justify-center items-center ml-6 px-4 py-2 rounded-full bg-primary text-white hover:text-primary hover:bg-white border-primary border-2'>
-                            <a href='./#'>Get Started</a>
-                        </div>
                     </div>
                 </div>
             </header>
@@ -79,14 +79,14 @@ function App() {
             {/* Main Section */}
             <main className='max-w-[1440px] w-full px-24'>
                 {/* Hero Section */}
-                <section className='hero'>
+                <section className='hero relative flex flex-col'>
                     {/* Hero Section 1*/}
-                    <div className='hero1 max-h-[350px] h-full grid grid-cols-2 gap-9'>
+                    <div className='hero1 max-h-[400px] h-full grid grid-cols-2 gap-9'>
                         <div className='col-span-1 z-10 -ml-24'>
                             <img
                                 src={pic}
                                 alt='Plumbing work'
-                                className='h-[450px] w-full'
+                                className='h-[500px] w-full'
                             />
                         </div>
                         <div className='col-span-1 pt-12 pb-6'>
@@ -96,24 +96,110 @@ function App() {
                             </h1>
                         </div>
                     </div>
+                    <div className='grid grid-cols-3 gap-4 p-5 shadow-xl bg-white z-20 place-items-center rounded self-center absolute top-[300px]'>
+                        <h3 className='col-span-full  font-bold text-xl'>
+                            Our Expect Team
+                        </h3>
+                        <div className='colspan-1 text-white bg-blue-500 p-3 rounded'>
+                            <svg
+                                xmlns='http://www.w3.org/2000/svg'
+                                viewBox='0 0 24 24'
+                                fill='currentColor'
+                                className='w-9 h-9'>
+                                <path
+                                    fillRule='evenodd'
+                                    d='M11.622 1.602a.75.75 0 01.756 0l2.25 1.313a.75.75 0 01-.756 1.295L12 3.118 10.128 4.21a.75.75 0 11-.756-1.295l2.25-1.313zM5.898 5.81a.75.75 0 01-.27 1.025l-1.14.665 1.14.665a.75.75 0 11-.756 1.295L3.75 8.806v.944a.75.75 0 01-1.5 0V7.5a.75.75 0 01.372-.648l2.25-1.312a.75.75 0 011.026.27zm12.204 0a.75.75 0 011.026-.27l2.25 1.312a.75.75 0 01.372.648v2.25a.75.75 0 01-1.5 0v-.944l-1.122.654a.75.75 0 11-.756-1.295l1.14-.665-1.14-.665a.75.75 0 01-.27-1.025zm-9 5.25a.75.75 0 011.026-.27L12 11.882l1.872-1.092a.75.75 0 11.756 1.295l-1.878 1.096V15a.75.75 0 01-1.5 0v-1.82l-1.878-1.095a.75.75 0 01-.27-1.025zM3 13.5a.75.75 0 01.75.75v1.82l1.878 1.095a.75.75 0 11-.756 1.295l-2.25-1.312a.75.75 0 01-.372-.648v-2.25A.75.75 0 013 13.5zm18 0a.75.75 0 01.75.75v2.25a.75.75 0 01-.372.648l-2.25 1.312a.75.75 0 11-.756-1.295l1.878-1.096V14.25a.75.75 0 01.75-.75zm-9 5.25a.75.75 0 01.75.75v.944l1.122-.654a.75.75 0 11.756 1.295l-2.25 1.313a.75.75 0 01-.756 0l-2.25-1.313a.75.75 0 11.756-1.295l1.122.654V19.5a.75.75 0 01.75-.75z'
+                                    clipRule='evenodd'
+                                />
+                            </svg>
+                        </div>
+                        <div className='colspan-1 text-white bg-red-500 p-3 rounded'>
+                            <svg
+                                xmlns='http://www.w3.org/2000/svg'
+                                viewBox='0 0 24 24'
+                                fill='currentColor'
+                                className='w-9 h-9'>
+                                <path
+                                    fillRule='evenodd'
+                                    d='M11.622 1.602a.75.75 0 01.756 0l2.25 1.313a.75.75 0 01-.756 1.295L12 3.118 10.128 4.21a.75.75 0 11-.756-1.295l2.25-1.313zM5.898 5.81a.75.75 0 01-.27 1.025l-1.14.665 1.14.665a.75.75 0 11-.756 1.295L3.75 8.806v.944a.75.75 0 01-1.5 0V7.5a.75.75 0 01.372-.648l2.25-1.312a.75.75 0 011.026.27zm12.204 0a.75.75 0 011.026-.27l2.25 1.312a.75.75 0 01.372.648v2.25a.75.75 0 01-1.5 0v-.944l-1.122.654a.75.75 0 11-.756-1.295l1.14-.665-1.14-.665a.75.75 0 01-.27-1.025zm-9 5.25a.75.75 0 011.026-.27L12 11.882l1.872-1.092a.75.75 0 11.756 1.295l-1.878 1.096V15a.75.75 0 01-1.5 0v-1.82l-1.878-1.095a.75.75 0 01-.27-1.025zM3 13.5a.75.75 0 01.75.75v1.82l1.878 1.095a.75.75 0 11-.756 1.295l-2.25-1.312a.75.75 0 01-.372-.648v-2.25A.75.75 0 013 13.5zm18 0a.75.75 0 01.75.75v2.25a.75.75 0 01-.372.648l-2.25 1.312a.75.75 0 11-.756-1.295l1.878-1.096V14.25a.75.75 0 01.75-.75zm-9 5.25a.75.75 0 01.75.75v.944l1.122-.654a.75.75 0 11.756 1.295l-2.25 1.313a.75.75 0 01-.756 0l-2.25-1.313a.75.75 0 11.756-1.295l1.122.654V19.5a.75.75 0 01.75-.75z'
+                                    clipRule='evenodd'
+                                />
+                            </svg>
+                        </div>
+                        <div className='colspan-1 text-white bg-yellow-500 p-3 rounded'>
+                            <svg
+                                xmlns='http://www.w3.org/2000/svg'
+                                viewBox='0 0 24 24'
+                                fill='currentColor'
+                                className='w-9 h-9'>
+                                <path
+                                    fillRule='evenodd'
+                                    d='M11.622 1.602a.75.75 0 01.756 0l2.25 1.313a.75.75 0 01-.756 1.295L12 3.118 10.128 4.21a.75.75 0 11-.756-1.295l2.25-1.313zM5.898 5.81a.75.75 0 01-.27 1.025l-1.14.665 1.14.665a.75.75 0 11-.756 1.295L3.75 8.806v.944a.75.75 0 01-1.5 0V7.5a.75.75 0 01.372-.648l2.25-1.312a.75.75 0 011.026.27zm12.204 0a.75.75 0 011.026-.27l2.25 1.312a.75.75 0 01.372.648v2.25a.75.75 0 01-1.5 0v-.944l-1.122.654a.75.75 0 11-.756-1.295l1.14-.665-1.14-.665a.75.75 0 01-.27-1.025zm-9 5.25a.75.75 0 011.026-.27L12 11.882l1.872-1.092a.75.75 0 11.756 1.295l-1.878 1.096V15a.75.75 0 01-1.5 0v-1.82l-1.878-1.095a.75.75 0 01-.27-1.025zM3 13.5a.75.75 0 01.75.75v1.82l1.878 1.095a.75.75 0 11-.756 1.295l-2.25-1.312a.75.75 0 01-.372-.648v-2.25A.75.75 0 013 13.5zm18 0a.75.75 0 01.75.75v2.25a.75.75 0 01-.372.648l-2.25 1.312a.75.75 0 11-.756-1.295l1.878-1.096V14.25a.75.75 0 01.75-.75zm-9 5.25a.75.75 0 01.75.75v.944l1.122-.654a.75.75 0 11.756 1.295l-2.25 1.313a.75.75 0 01-.756 0l-2.25-1.313a.75.75 0 11.756-1.295l1.122.654V19.5a.75.75 0 01.75-.75z'
+                                    clipRule='evenodd'
+                                />
+                            </svg>
+                        </div>
+                        <div className='colspan-1 text-white bg-green-500 p-3 rounded'>
+                            <svg
+                                xmlns='http://www.w3.org/2000/svg'
+                                viewBox='0 0 24 24'
+                                fill='currentColor'
+                                className='w-9 h-9'>
+                                <path
+                                    fillRule='evenodd'
+                                    d='M11.622 1.602a.75.75 0 01.756 0l2.25 1.313a.75.75 0 01-.756 1.295L12 3.118 10.128 4.21a.75.75 0 11-.756-1.295l2.25-1.313zM5.898 5.81a.75.75 0 01-.27 1.025l-1.14.665 1.14.665a.75.75 0 11-.756 1.295L3.75 8.806v.944a.75.75 0 01-1.5 0V7.5a.75.75 0 01.372-.648l2.25-1.312a.75.75 0 011.026.27zm12.204 0a.75.75 0 011.026-.27l2.25 1.312a.75.75 0 01.372.648v2.25a.75.75 0 01-1.5 0v-.944l-1.122.654a.75.75 0 11-.756-1.295l1.14-.665-1.14-.665a.75.75 0 01-.27-1.025zm-9 5.25a.75.75 0 011.026-.27L12 11.882l1.872-1.092a.75.75 0 11.756 1.295l-1.878 1.096V15a.75.75 0 01-1.5 0v-1.82l-1.878-1.095a.75.75 0 01-.27-1.025zM3 13.5a.75.75 0 01.75.75v1.82l1.878 1.095a.75.75 0 11-.756 1.295l-2.25-1.312a.75.75 0 01-.372-.648v-2.25A.75.75 0 013 13.5zm18 0a.75.75 0 01.75.75v2.25a.75.75 0 01-.372.648l-2.25 1.312a.75.75 0 11-.756-1.295l1.878-1.096V14.25a.75.75 0 01.75-.75zm-9 5.25a.75.75 0 01.75.75v.944l1.122-.654a.75.75 0 11.756 1.295l-2.25 1.313a.75.75 0 01-.756 0l-2.25-1.313a.75.75 0 11.756-1.295l1.122.654V19.5a.75.75 0 01.75-.75z'
+                                    clipRule='evenodd'
+                                />
+                            </svg>
+                        </div>
+                        <div className='colspan-1 text-white bg-purple-500 p-3 rounded'>
+                            <svg
+                                xmlns='http://www.w3.org/2000/svg'
+                                viewBox='0 0 24 24'
+                                fill='currentColor'
+                                className='w-9 h-9'>
+                                <path
+                                    fillRule='evenodd'
+                                    d='M11.622 1.602a.75.75 0 01.756 0l2.25 1.313a.75.75 0 01-.756 1.295L12 3.118 10.128 4.21a.75.75 0 11-.756-1.295l2.25-1.313zM5.898 5.81a.75.75 0 01-.27 1.025l-1.14.665 1.14.665a.75.75 0 11-.756 1.295L3.75 8.806v.944a.75.75 0 01-1.5 0V7.5a.75.75 0 01.372-.648l2.25-1.312a.75.75 0 011.026.27zm12.204 0a.75.75 0 011.026-.27l2.25 1.312a.75.75 0 01.372.648v2.25a.75.75 0 01-1.5 0v-.944l-1.122.654a.75.75 0 11-.756-1.295l1.14-.665-1.14-.665a.75.75 0 01-.27-1.025zm-9 5.25a.75.75 0 011.026-.27L12 11.882l1.872-1.092a.75.75 0 11.756 1.295l-1.878 1.096V15a.75.75 0 01-1.5 0v-1.82l-1.878-1.095a.75.75 0 01-.27-1.025zM3 13.5a.75.75 0 01.75.75v1.82l1.878 1.095a.75.75 0 11-.756 1.295l-2.25-1.312a.75.75 0 01-.372-.648v-2.25A.75.75 0 013 13.5zm18 0a.75.75 0 01.75.75v2.25a.75.75 0 01-.372.648l-2.25 1.312a.75.75 0 11-.756-1.295l1.878-1.096V14.25a.75.75 0 01.75-.75zm-9 5.25a.75.75 0 01.75.75v.944l1.122-.654a.75.75 0 11.756 1.295l-2.25 1.313a.75.75 0 01-.756 0l-2.25-1.313a.75.75 0 11.756-1.295l1.122.654V19.5a.75.75 0 01.75-.75z'
+                                    clipRule='evenodd'
+                                />
+                            </svg>
+                        </div>
+                        <div className='colspan-1 text-white bg-pink-500 p-3 rounded'>
+                            <svg
+                                xmlns='http://www.w3.org/2000/svg'
+                                viewBox='0 0 24 24'
+                                fill='currentColor'
+                                className='w-9 h-9'>
+                                <path
+                                    fillRule='evenodd'
+                                    d='M11.622 1.602a.75.75 0 01.756 0l2.25 1.313a.75.75 0 01-.756 1.295L12 3.118 10.128 4.21a.75.75 0 11-.756-1.295l2.25-1.313zM5.898 5.81a.75.75 0 01-.27 1.025l-1.14.665 1.14.665a.75.75 0 11-.756 1.295L3.75 8.806v.944a.75.75 0 01-1.5 0V7.5a.75.75 0 01.372-.648l2.25-1.312a.75.75 0 011.026.27zm12.204 0a.75.75 0 011.026-.27l2.25 1.312a.75.75 0 01.372.648v2.25a.75.75 0 01-1.5 0v-.944l-1.122.654a.75.75 0 11-.756-1.295l1.14-.665-1.14-.665a.75.75 0 01-.27-1.025zm-9 5.25a.75.75 0 011.026-.27L12 11.882l1.872-1.092a.75.75 0 11.756 1.295l-1.878 1.096V15a.75.75 0 01-1.5 0v-1.82l-1.878-1.095a.75.75 0 01-.27-1.025zM3 13.5a.75.75 0 01.75.75v1.82l1.878 1.095a.75.75 0 11-.756 1.295l-2.25-1.312a.75.75 0 01-.372-.648v-2.25A.75.75 0 013 13.5zm18 0a.75.75 0 01.75.75v2.25a.75.75 0 01-.372.648l-2.25 1.312a.75.75 0 11-.756-1.295l1.878-1.096V14.25a.75.75 0 01.75-.75zm-9 5.25a.75.75 0 01.75.75v.944l1.122-.654a.75.75 0 11.756 1.295l-2.25 1.313a.75.75 0 01-.756 0l-2.25-1.313a.75.75 0 11.756-1.295l1.122.654V19.5a.75.75 0 01.75-.75z'
+                                    clipRule='evenodd'
+                                />
+                            </svg>
+                        </div>
+                        <div className='col-span-full place-self-center flex justify-center items-center px-4 py-1 bg-primary text-white hover:text-primary hover:bg-white border-primary border-2 rounded-full shadow w-fit'>
+                            <a href='./#'>Get Started</a>
+                        </div>
+                    </div>
                     {/* Hero Section 1 Ends*/}
 
                     {/* Hero Section 2*/}
-                    <div className='hero2 bg-slate-200 bg-opacity-20 grid grid-cols-2 gap-9 -mx-24 px-24'>
-                        <div className='col-span-1 mt-32 py-20 grid grid-cols-2 gap-9'>
+                    <div className='hero2 bg-slate-200 bg-opacity-20 grid grid-cols-3 gap-16 -mx-24 px-24'>
+                        <div className='col-span-2 mt-32 py-20 grid grid-cols-2 gap-9 place-self-start'>
                             <div className='col-span-1'>
-                                <p className='text-primary font-bold text-6xl'>
+                                <p className='text-primary font-bold text-5xl'>
                                     1,500+
                                 </p>
-                                <p className='capitalize max-w-[184px] text-xl mt-2'>
+                                <p className='capitalize max-w-[184px] text-lg mt-2'>
                                     Clients satisfaction with our Services
                                 </p>
                             </div>
                             <div className='col-span-1'>
-                                <p className='text-primary font-bold text-6xl'>
+                                <p className='text-primary font-bold text-5xl'>
                                     2,300+
                                 </p>
-                                <p className='capitalize max-w-[184px] text-xl mt-2'>
+                                <p className='capitalize max-w-[184px] text-lg mt-2'>
                                     Project completed by our services
                                 </p>
                             </div>
@@ -186,7 +272,7 @@ function App() {
                                     324k Total Reviews
                                 </p>
                             </h3>
-                            <div className='img ml-24 rounded-t'>
+                            <div className='img rounded-t'>
                                 <img
                                     src={pic}
                                     alt=''
