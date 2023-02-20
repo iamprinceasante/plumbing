@@ -81,6 +81,9 @@ function App() {
                 {/* Hero Section */}
                 <section className='hero relative flex flex-col'>
                     {/* Hero Section 1*/}
+
+                    {/* Our Expect Team*/}
+
                     <div className='hero1 max-h-[400px] h-full grid grid-cols-2 gap-9'>
                         <div className='col-span-1 z-10 -ml-24'>
                             <img
@@ -96,6 +99,11 @@ function App() {
                             </h1>
                         </div>
                     </div>
+
+                    {/* Hero Section 1 */}
+
+                    {/* Our Expect Team */}
+
                     <div className='grid grid-cols-3 gap-4 p-5 shadow-xl bg-white z-20 place-items-center rounded self-center absolute top-[300px]'>
                         <h3 className='col-span-full  font-bold text-xl'>
                             Our Expect Team
@@ -182,7 +190,8 @@ function App() {
                             <a href='./#'>Get Started</a>
                         </div>
                     </div>
-                    {/* Hero Section 1 Ends*/}
+
+                    {/* Our Section Expect Ends*/}
 
                     {/* Hero Section 2*/}
                     <div className='hero2 bg-slate-200 bg-opacity-20 grid grid-cols-3 gap-16 -mx-24 px-24'>
