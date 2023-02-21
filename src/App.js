@@ -13,16 +13,16 @@ function App() {
     // Scroll Effect Ends
 
     return (
-        <div className='font-display select-none'>
+        <div className='font-display select-none w-screen'>
             {/* Header Section */}
 
-            <header>
+            <header className='fixed z-50 w-screen top-0'>
                 <div
-                    className={`header max-w-[1440px] w-full flex justify-between items-center px-24 py-2 z-50 transition-colors duration-500 ${
+                    className={`max-w-[1440px] w-full mx-auto flex justify-between items-center px-24 py-2 z-50 transition-colors duration-500 ${
                         scroll
                             ? 'bg-opacity-80 bg-white backdrop-blur'
                             : 'bg-transparent'
-                    } fixed top-0`}>
+                    } relative top-0`}>
                     <div className='logo'>
                         <h2 className='text-primary text-xl uppercase font-bold'>
                             Plumbing
@@ -77,12 +77,10 @@ function App() {
             {/* Header Section Ends*/}
 
             {/* Main Section */}
-            <main className='max-w-[1440px] w-full px-24'>
+            <main className='max-w-[1440px] w-full px-24 mx-auto'>
                 {/* Hero Section */}
                 <section className='hero relative flex flex-col'>
                     {/* Hero Section 1*/}
-
-                    {/* Our Expect Team*/}
 
                     <div className='hero1 max-h-[400px] h-full grid grid-cols-2 gap-9'>
                         <div className='col-span-1 z-10 -ml-24'>
@@ -187,7 +185,7 @@ function App() {
                             </svg>
                         </div>
                         <div className='col-span-full place-self-center flex justify-center items-center px-4 py-1 bg-primary text-white hover:text-primary hover:bg-white border-primary border-2 rounded-full shadow w-fit'>
-                            <a href='./#'>Get Started</a>
+                            <a href='./#'>Contact Us</a>
                         </div>
                     </div>
 
@@ -587,7 +585,7 @@ function App() {
 
                 {/* Contact Us Section */}
             </main>
-            <footer className='max-w-[1440px] w-full px-24 pt-8 pb-4 bg-slate-100 relative mt-32'>
+            <footer className='max-w-[1440px] w-full mx-auto px-24 pt-8 pb-4 bg-slate-100 relative mt-32'>
                 <section className='grid grid-cols-5 bg-primary py-10 gap-16 rounded-md text-white relative -top-40'>
                     <div className='col-span-3 px-9 flex flex-col justify-center'>
                         <p className='text-2xl font-bold'>
@@ -650,14 +648,14 @@ function App() {
                     </div>
                     <div className='col-span-1'>
                         <h2 className='text-xl uppercase font-bold mb-4'>
-                            Quick Guide
+                            Quick Links
                         </h2>
                         <div className='gap-y-1 grid'>
                             <div className='link'>
-                                <a href='./#'>Policy</a>
+                                <a href='./#'>Terms of Use</a>
                             </div>
                             <div className='link'>
-                                <a href='./#'>Privacy</a>
+                                <a href='./#'>Privacy and Policy</a>
                             </div>
                             <div className='link'>
                                 <a href='./#'>Contact</a>
