@@ -9,7 +9,7 @@ module.exports = {
                 accent: '#ffb800',
             },
             fontFamily: {
-                display: ["'Noto Sans Japanese'", 'sans-serif'],
+                display: ["'Noto Sans JP'", 'sans-serif'],
             },
         },
     },

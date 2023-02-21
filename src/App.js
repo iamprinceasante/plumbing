@@ -13,7 +13,7 @@ function App() {
     // Scroll Effect Ends
 
     return (
-        <div className='App font-display'>
+        <div className='font-display select-none'>
             {/* Header Section */}
 
             <header>
