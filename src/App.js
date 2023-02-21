@@ -310,7 +310,7 @@ function App() {
                 {/* Hero Section Ends*/}
 
                 {/* Services Section*/}
-                <section className='py-20'>
+                <section className='py-20 bg-slate-50 -mx-24 px-24 z-20 relative'>
                     <h2 className='text-center text-2xl font-bold text-primary my-3'>
                         Plumbing Service
                     </h2>
@@ -318,8 +318,9 @@ function App() {
                         Our Plumbing Service
                     </h3>
                     <div className='grid grid-cols-3 gap-12 place-items-center'>
-                        <div className='flex flex-col justify-center items-center relative shadow-2xl p-9 rounded bg-slate-50'>
-                            <div className='icon shadow-md text-white bg-blue-500 p-5 rounded-full absolute -top-10'>
+                        <div className='flex flex-col justify-center items-center relative p-9 bg-white rounded mt-6 shadow-2xl'>
+                            <div className='absolute rounded bg-white h-full w-full -z-10 skew-y-6 origin-top-right shadow-2xl'></div>
+                            <div className='icon shadow-md text-white bg-blue-500 p-5 rounded-full absolute -top-14'>
                                 <svg
                                     xmlns='http://www.w3.org/2000/svg'
                                     viewBox='0 0 24 24'
@@ -363,7 +364,7 @@ function App() {
                                 adipisicing elit. Omnis ut quas similique sed,
                                 vitae possimus.
                             </p>
-                            <div className='flex justify-center items-center mt-4 animate-pulse'>
+                            <div className='flex justify-center items-center mt-8 animate-pulse'>
                                 <a href='./#'>Read More</a>
                                 <svg
                                     xmlns='http://www.w3.org/2000/svg'
@@ -380,8 +381,9 @@ function App() {
                                 </svg>
                             </div>
                         </div>
-                        <div className='flex flex-col justify-center items-center relative shadow-2xl p-9 rounded bg-slate-50'>
-                            <div className='icon shadow-md text-white bg-blue-500 p-5 rounded-full absolute -top-10'>
+                        <div className='flex flex-col justify-center items-center relative shadow-2xl p-9 rounded bg-white mt-8'>
+                            <div className='absolute bg-white -skew-y-6 origin-top-left h-full w-full rounded -z-10 shadow-2xl'></div>
+                            <div className='icon shadow-md text-white bg-blue-500 p-5 rounded-full absolute -top-12'>
                                 <svg
                                     xmlns='http://www.w3.org/2000/svg'
                                     viewBox='0 0 24 24'
@@ -584,16 +586,17 @@ function App() {
                 {/* Why Choose Us Ends*/}
 
                 {/* Contact Us Section */}
-
-                <section className='grid grid-cols-5 bg-primary pb-10 gap-16 rounded-md text-white'>
-                    <div className='col-span-3 pt-20 px-9'>
-                        <p className='text-3xl font-bold'>
+            </main>
+            <footer className='max-w-[1440px] w-full px-24 pt-8 pb-4 bg-slate-100 relative mt-32'>
+                <section className='grid grid-cols-5 bg-primary py-10 gap-16 rounded-md text-white relative -top-40'>
+                    <div className='col-span-3 px-9 flex flex-col justify-center'>
+                        <p className='text-2xl font-bold'>
                             Can't find your desired service?
                         </p>
-                        <p className='text-3xl font-bold my-2'>
+                        <p className='text-2xl font-bold my-2'>
                             Let know in 24/7 in 3125
                         </p>
-                        <div className='grid grid-cols-2 gap-6 text-xl'>
+                        <div className='grid grid-cols-2 gap-6'>
                             <div className='flex justify-center items-center mt-4 px-6 py-2 bg-white text-primary hover:border-2 hover:border-white hover:text-white hover:bg-primary rounded-full shadow w-fit transition-all duration-500'>
                                 <a href='./#'>Request a service</a>
                             </div>
@@ -602,15 +605,141 @@ function App() {
                             </div>
                         </div>
                     </div>
-                    <div className='col-span-2 mr-6'>
+                    <div className='col-span-2 mr-6 -mt-28'>
                         <img
                             src={pic}
                             alt='Call Us Now'
-                            className='h-[360px] w-full -mt-16 rounded'
+                            className='h-[300px] w-full rounded'
                         />
                     </div>
                 </section>
-            </main>
+                <section className='-mt-28 grid grid-cols-5 gap-14'>
+                    <div className='col-span-2'>
+                        <div className='mb-4'>
+                            <h2 className='text-2xl uppercase font-bold'>
+                                Plumbing
+                            </h2>
+                        </div>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing
+                            elit. Accusamus, ut. Optio, nobis fuga minima porro
+                            totam necessitatibus beatae dolorum delectus!
+                        </p>
+                    </div>
+                    <div className='col-span-1'>
+                        <h2 className='text-xl uppercase font-bold mb-4'>
+                            About Us
+                        </h2>
+                        <div className='gap-y-1 grid'>
+                            <div className='link'>
+                                <a href='./#'>Our Site</a>
+                            </div>
+                            <div className='link'>
+                                <a href='./#'>Team</a>
+                            </div>
+                            <div className='link'>
+                                <a href='./#'>Members</a>
+                            </div>
+                            <div className='link'>
+                                <a href='./#'>Careers</a>
+                            </div>
+                            <div className='link'>
+                                <a href='./#'>Contact Us</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='col-span-1'>
+                        <h2 className='text-xl uppercase font-bold mb-4'>
+                            Quick Guide
+                        </h2>
+                        <div className='gap-y-1 grid'>
+                            <div className='link'>
+                                <a href='./#'>Policy</a>
+                            </div>
+                            <div className='link'>
+                                <a href='./#'>Privacy</a>
+                            </div>
+                            <div className='link'>
+                                <a href='./#'>Contact</a>
+                            </div>
+                            <div className='link'>
+                                <a href='./#'>Support</a>
+                            </div>
+                            <div className='link'>
+                                <a href='./#'>FAQ's</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='col-span-1'>
+                        <h2 className='text-xl uppercase font-bold mb-4'>
+                            Support
+                        </h2>
+                        <div className='gap-y-1 grid'>
+                            <div className='link'>
+                                <a href='./#'>Help Centers</a>
+                            </div>
+                            <div className='link'>
+                                <a href='./#'>Loan Support</a>
+                            </div>
+                            <div className='link'>
+                                <a href='./#'>Manager</a>
+                            </div>
+                            <div className='link'>
+                                <a href='./#'>Privacy</a>
+                            </div>
+                            <div className='link'>
+                                <a href='./#'>Policy</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div className='h-[1px] bg-slate-300 w-full mt-12'></div>
+                <section className='pt-6 flex justify-between items-center'>
+                    {/* Social Icons */}
+                    <div className='flex items-center'>
+                        <div className='colspan-1 text-white bg-blue-500 p-3 rounded-full'>
+                            <svg
+                                xmlns='http://www.w3.org/2000/svg'
+                                viewBox='0 0 24 24'
+                                fill='currentColor'
+                                className='w-6 h-6'>
+                                <path
+                                    fillRule='evenodd'
+                                    d='M11.622 1.602a.75.75 0 01.756 0l2.25 1.313a.75.75 0 01-.756 1.295L12 3.118 10.128 4.21a.75.75 0 11-.756-1.295l2.25-1.313zM5.898 5.81a.75.75 0 01-.27 1.025l-1.14.665 1.14.665a.75.75 0 11-.756 1.295L3.75 8.806v.944a.75.75 0 01-1.5 0V7.5a.75.75 0 01.372-.648l2.25-1.312a.75.75 0 011.026.27zm12.204 0a.75.75 0 011.026-.27l2.25 1.312a.75.75 0 01.372.648v2.25a.75.75 0 01-1.5 0v-.944l-1.122.654a.75.75 0 11-.756-1.295l1.14-.665-1.14-.665a.75.75 0 01-.27-1.025zm-9 5.25a.75.75 0 011.026-.27L12 11.882l1.872-1.092a.75.75 0 11.756 1.295l-1.878 1.096V15a.75.75 0 01-1.5 0v-1.82l-1.878-1.095a.75.75 0 01-.27-1.025zM3 13.5a.75.75 0 01.75.75v1.82l1.878 1.095a.75.75 0 11-.756 1.295l-2.25-1.312a.75.75 0 01-.372-.648v-2.25A.75.75 0 013 13.5zm18 0a.75.75 0 01.75.75v2.25a.75.75 0 01-.372.648l-2.25 1.312a.75.75 0 11-.756-1.295l1.878-1.096V14.25a.75.75 0 01.75-.75zm-9 5.25a.75.75 0 01.75.75v.944l1.122-.654a.75.75 0 11.756 1.295l-2.25 1.313a.75.75 0 01-.756 0l-2.25-1.313a.75.75 0 11.756-1.295l1.122.654V19.5a.75.75 0 01.75-.75z'
+                                    clipRule='evenodd'
+                                />
+                            </svg>
+                        </div>
+                        <div className='colspan-1 text-white bg-red-500 p-3 rounded-full ml-4'>
+                            <svg
+                                xmlns='http://www.w3.org/2000/svg'
+                                viewBox='0 0 24 24'
+                                fill='currentColor'
+                                className='w-6 h-6'>
+                                <path
+                                    fillRule='evenodd'
+                                    d='M11.622 1.602a.75.75 0 01.756 0l2.25 1.313a.75.75 0 01-.756 1.295L12 3.118 10.128 4.21a.75.75 0 11-.756-1.295l2.25-1.313zM5.898 5.81a.75.75 0 01-.27 1.025l-1.14.665 1.14.665a.75.75 0 11-.756 1.295L3.75 8.806v.944a.75.75 0 01-1.5 0V7.5a.75.75 0 01.372-.648l2.25-1.312a.75.75 0 011.026.27zm12.204 0a.75.75 0 011.026-.27l2.25 1.312a.75.75 0 01.372.648v2.25a.75.75 0 01-1.5 0v-.944l-1.122.654a.75.75 0 11-.756-1.295l1.14-.665-1.14-.665a.75.75 0 01-.27-1.025zm-9 5.25a.75.75 0 011.026-.27L12 11.882l1.872-1.092a.75.75 0 11.756 1.295l-1.878 1.096V15a.75.75 0 01-1.5 0v-1.82l-1.878-1.095a.75.75 0 01-.27-1.025zM3 13.5a.75.75 0 01.75.75v1.82l1.878 1.095a.75.75 0 11-.756 1.295l-2.25-1.312a.75.75 0 01-.372-.648v-2.25A.75.75 0 013 13.5zm18 0a.75.75 0 01.75.75v2.25a.75.75 0 01-.372.648l-2.25 1.312a.75.75 0 11-.756-1.295l1.878-1.096V14.25a.75.75 0 01.75-.75zm-9 5.25a.75.75 0 01.75.75v.944l1.122-.654a.75.75 0 11.756 1.295l-2.25 1.313a.75.75 0 01-.756 0l-2.25-1.313a.75.75 0 11.756-1.295l1.122.654V19.5a.75.75 0 01.75-.75z'
+                                    clipRule='evenodd'
+                                />
+                            </svg>
+                        </div>
+                        <div className='colspan-1 text-white bg-yellow-500 p-3 rounded-full ml-4'>
+                            <svg
+                                xmlns='http://www.w3.org/2000/svg'
+                                viewBox='0 0 24 24'
+                                fill='currentColor'
+                                className='w-6 h-6'>
+                                <path
+                                    fillRule='evenodd'
+                                    d='M11.622 1.602a.75.75 0 01.756 0l2.25 1.313a.75.75 0 01-.756 1.295L12 3.118 10.128 4.21a.75.75 0 11-.756-1.295l2.25-1.313zM5.898 5.81a.75.75 0 01-.27 1.025l-1.14.665 1.14.665a.75.75 0 11-.756 1.295L3.75 8.806v.944a.75.75 0 01-1.5 0V7.5a.75.75 0 01.372-.648l2.25-1.312a.75.75 0 011.026.27zm12.204 0a.75.75 0 011.026-.27l2.25 1.312a.75.75 0 01.372.648v2.25a.75.75 0 01-1.5 0v-.944l-1.122.654a.75.75 0 11-.756-1.295l1.14-.665-1.14-.665a.75.75 0 01-.27-1.025zm-9 5.25a.75.75 0 011.026-.27L12 11.882l1.872-1.092a.75.75 0 11.756 1.295l-1.878 1.096V15a.75.75 0 01-1.5 0v-1.82l-1.878-1.095a.75.75 0 01-.27-1.025zM3 13.5a.75.75 0 01.75.75v1.82l1.878 1.095a.75.75 0 11-.756 1.295l-2.25-1.312a.75.75 0 01-.372-.648v-2.25A.75.75 0 013 13.5zm18 0a.75.75 0 01.75.75v2.25a.75.75 0 01-.372.648l-2.25 1.312a.75.75 0 11-.756-1.295l1.878-1.096V14.25a.75.75 0 01.75-.75zm-9 5.25a.75.75 0 01.75.75v.944l1.122-.654a.75.75 0 11.756 1.295l-2.25 1.313a.75.75 0 01-.756 0l-2.25-1.313a.75.75 0 11.756-1.295l1.122.654V19.5a.75.75 0 01.75-.75z'
+                                    clipRule='evenodd'
+                                />
+                            </svg>
+                        </div>
+                    </div>
+                    <p>Made With Love By Prince Asante</p>
+                </section>
+            </footer>
         </div>
     );
 }
